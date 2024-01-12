@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <h1>Hello 🌎 of Pokemons</h1>
-      <div className="card">
-        <h2>Here begins the Pokedex 😎😁</h2>
-        {pokemonArray.map(
-          (pokemon, index) => (<PokemonCard key={index}{...pokemon}/>
-        ))}
-      </div>
+      <h2>Here begins the Pokedex 😎😁</h2>
+      <article className="card">
+          {pokemonArray.map(
+            (pokemon, index) => (<PokemonCard key={index}{...pokemon}/>
+          ))}
+      </article>
     </>
   )
 }
