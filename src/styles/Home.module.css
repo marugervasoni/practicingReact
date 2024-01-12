@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  /* tablet  */
+  @media only screen and (max-width: 768px) {
+    .card {
+      padding: 1em;
+      flex-direction: column;
+    }
+  }
+  
+  /* mobile */
+  @media only screen and (max-width: 480px) {
+    .card {
+      padding: 0.5em; 
+      flex-direction: column; 
+    }
+}

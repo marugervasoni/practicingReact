@@ -1,13 +1,13 @@
 .card {
-    width: 20rem;
-    height: 25rem;
+    padding: 1rem 0rem;
+    width: 18rem;
+    height: 20rem;
+    /* border: red solid 2px; */
+    align-content: space-around;
 }
+
 .card img{
     background-color: #f0f0f0;
     border-radius: 10px;     
     width: 50%;
-}
-.likeButton {
-    border-color: yellow;
-    border-radius: 10px;     
 }

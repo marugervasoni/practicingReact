@@ -10,8 +10,7 @@ const PokemonCard = (pokemon) => {
         <img src={pokemon.url} alt={pokemon.url}></img>
         <h3>{pokemon.name}</h3>
         <p>Type: {pokemon.type}</p>
-        <h4>{likes}</h4>
-        <button className={styles.likeButton} onClick={ ()=> setLikes(likes+1) }>❤</button>    
+        <button onClick={ ()=> setLikes(likes+1) }>{likes} ❤</button>        
       </div>
     </>
   )

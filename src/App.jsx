@@ -1,18 +1,18 @@
 import './App.css'
-import { pokemonArray } from './assets/pokemones'
-import PokemonCard from './components/PokemonCard'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Home from './pages/Home'
+import Login from './pages/Login'
+
 
 function App() {
 
   return (
-    <>
-      <h1>Hello 🌎 of Pokemons</h1>
-      <h2>Here begins the Pokedex 😎😁</h2>
-      <article className="card">
-          {pokemonArray.map(
-            (pokemon, index) => (<PokemonCard key={index}{...pokemon}/>
-          ))}
-      </article>
+    <> 
+      <Header/>
+      <Login/>
+      <Home/>
+      <Footer/>
     </>
   )
 }
