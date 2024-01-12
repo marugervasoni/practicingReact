@@ -9,13 +9,14 @@
 
 form {
     padding: 0.5rem;
-    width: 23rem;
+    width: 14rem;
     align-content: center;
+    justify-content: space-around;
 }
 
 input {
     padding: 3px;
-    width: 20rem;
+    width: 13rem;
     border-radius: 0.3rem;
     border: none;
 }
