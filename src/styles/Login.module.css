@@ -18,9 +18,13 @@ input {
     padding: 3px;
     width: 13rem;
     border-radius: 0.3rem;
-    border: none;
+    border: #242424 solid 1px;
 }
 
 input, button {
     margin: 0.4rem;
+}
+
+input:hover {
+    border-color: #535bf2;
 }

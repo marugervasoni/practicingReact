@@ -2,12 +2,20 @@
     padding: 1rem 0rem;
     width: 18rem;
     height: 20rem;
-    /* border: red solid 2px; */
+    border: #242424 solid 0.5px;
     align-content: space-around;
+    margin: 1rem;
 }
 
 .card img{
     background-color: #f0f0f0;
-    border-radius: 10px;     
     width: 50%;
+}
+
+.card, img {
+    border-radius: 10px;     
+}
+
+.card:hover {
+    border: solid 1px #535bf2;
 }

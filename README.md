@@ -13,3 +13,6 @@
 
 - C8: puesta en practica de eventos, formularios y validaciones. Desarrollo de header y footer junto con sus estilos.
 
+- C13: puesta en practica de useEffect en formulario y Bienvenida al usuario.
+
+
