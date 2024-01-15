@@ -15,4 +15,6 @@
 
 - C13: puesta en practica de useEffect en formulario y Bienvenida al usuario.
 
+-C14: peticiones asíncronas a API pokeapi utilizando librería axios.
+
 

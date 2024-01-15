@@ -1,19 +1,28 @@
-import React from 'react'
-import { pokemonArray } from '../assets/pokemones'
+import React, { useEffect, useState } from 'react'
 import PokemonCard from '../components/PokemonCard'
 import styles from '../styles/Home.module.css'
+import axios from 'axios'
 
 const Home = () => {
+  
+  const url = "https://pokeapi.co/api/v2/pokemon"
+  const [pokemons, setPokemons] = useState([])
+
+  useEffect(() => {
+    console.log("component did mount"); 
+    axios
+    .get(url)
+    .then(res => setPokemons(res.data.results))
+    .catch(err => console.log(err))
+  }, []);
+  
   return (
     <>
         <h1>Hello 🌎 of Pokemons</h1>
-        <h2></h2>
         <h2>Here begins the Pokedex 😎😁</h2>
-        <article className={styles.card}>
-          {pokemonArray.map(
-            (pokemon, index) => (<PokemonCard key={index}{...pokemon}/>
-          ))}
-        </article>
+        <div className={styles.card}>
+          {pokemons.map((item, index)  => <PokemonCard key={index} name={item.name} number={index}/>)}
+        </div>  
     </>
   )
 }
