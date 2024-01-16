@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from '../styles/PokemonCard.module.css'
-import PropTypes from 'prop-types'
 
 const PokemonCard = ({number, name}) => {
 
