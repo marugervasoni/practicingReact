@@ -13,10 +13,11 @@ const Login = () => {
             if (item) {
                 setUserName(item);
                 setIsLoggedIn(true);
+            
             }
         }
         checkUser();
-    },[]);
+    },[isLoggedIn]);
 
     const onChangeUserName = (e) => setUserName(e.target.value);
     const onChangePassword = (e) => setPassword(e.target.value);
@@ -33,12 +34,24 @@ const Login = () => {
             setIsLoggedIn(true);
         }
     };
+    const onLogOut = (e) => {
+        e.preventDefault();
+        
+        localStorage.clear();
+        console.log("user log out succesfully"); 
+        setIsLoggedIn(false);
+        setUserName("");
+        setPassword("");
+    };
 
   return (
     <>
         <div className={styles.loginForm}>
             {isLoggedIn ? (
-                <h2>Welcome {userName} !</h2>
+                <>
+                    <h2>Welcome {userName} !</h2>
+                    <button onClick={onLogOut}>Log out</button>
+                </>
             ) : (
                 <>
                    <h2>Login</h2>

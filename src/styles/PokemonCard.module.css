@@ -2,14 +2,15 @@
     padding: 1rem 0rem;
     width: 18rem;
     height: 20rem;
-    border: #242424 solid 0.5px;
+    /* border: #333333 solid 0.1px; */
+    border: #242424 solid 0.1px;
     align-content: space-around;
     margin: 1rem;
 }
 
 .card img{
     background-color: #f0f0f0;
-    width: 50%;
+    width: 12rem;
 }
 
 .card, img {

@@ -1,19 +1,23 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Home from './pages/Home'
-import Login from './pages/Login'
-
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home'
+import Login from './Pages/Login'
+import Shop from './Pages/Shop'
+import NotFound from './Pages/NotFound'
+import {routes} from './routes'
+import Pokedex from './Pages/Pokedex'
 
 function App() {
 
   return (
-    <> 
-      <Header/>
-      <Login/>
-      <Home/>
-      <Footer/>
-    </>
+    <Routes>
+      <Route path={routes.home} element={<Home/>}>
+        <Route path={routes.pokedex} element={<Pokedex/>}/>
+        <Route path={routes.shop} element={<Shop/>}/>
+        <Route path={routes.login} element={<Login/>}/>
+      </Route>
+      <Route path='*' element={<NotFound/>}/>
+    </Routes>
   )
 }
 
