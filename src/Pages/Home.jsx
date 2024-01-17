@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { Outlet } from 'react-router-dom'
 import styles from '../styles/Home.module.css'
+// import Index from '../Components/Index'
 
 const Home = () => {
   

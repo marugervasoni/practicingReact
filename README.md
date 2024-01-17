@@ -17,4 +17,5 @@
 
 - C14: peticiones asíncronas a API pokeapi utilizando librería axios.
 
-- C16: ruteo con React Router. 
+- C16: ruteo con React Router. Se agregaron Shop Page y ShopCard component.
+

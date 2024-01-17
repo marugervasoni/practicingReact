@@ -2,5 +2,6 @@ export const routes = {
     home: '/',
     login: '/login',
     shop: '/shop',
-    pokedex: '/pokedex'
+    pokedex: '/pokedex',
+    index: '/index'
 }
