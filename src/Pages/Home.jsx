@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { Outlet } from 'react-router-dom'
 import styles from '../styles/Home.module.css'
+import Menu from '../Components/Menu'
 // import Index from '../Components/Index'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div className={styles.container}>  
       <Header/>
+      <Menu/>
       <div className={styles.content}>
         <h1>Hello 🌎 of Pokemon</h1>
         <Outlet/>

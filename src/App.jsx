@@ -12,14 +12,23 @@ function App() {
 
   return (
     <Routes>
-      <Route path={routes.home} element={<Home/>}>
-        {/* <Route path={routes.index} element={<Index/>}/> */}
-        <Route path={routes.pokedex} element={<Pokedex/>}/>
-        <Route path={routes.shop} element={<Shop/>}/>
-        <Route path={routes.login} element={<Login/>}/>
-      </Route>
+      <Route path={routes.home} element={<Home/>}/>
+      <Route path={routes.pokedex} element={<Pokedex/>}/>
+      <Route path={routes.shop} element={<Shop/>}/>
+      <Route path={routes.login} element={<Login/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
+
+    // <Routes>
+    // <Route path={routes.home} element={<Home/>}>
+    //   {/* <Route path={routes.index} element={<Index/>}/> */}
+    //   <Route path={routes.pokedex} element={<Pokedex/>}/>
+    //   <Route path={routes.shop} element={<Shop/>}/>
+    //   <Route path={routes.login} element={<Login/>}/>
+    // </Route>
+    // <Route path='*' element={<NotFound/>}/>
+    // </Routes>
+
   )
 }
 
