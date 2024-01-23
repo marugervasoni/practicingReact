@@ -16,7 +16,7 @@ const ShopCard = (product) => {
     }
 
     return (
-    <>
+    <>  
         <div className={styles.card}>
           <img src={product.url} alt={product.name}></img>
           <h3>{product.name}</h3>

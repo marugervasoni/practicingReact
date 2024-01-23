@@ -6,29 +6,18 @@ import Shop from './Pages/Shop'
 import NotFound from './Pages/NotFound'
 import {routes} from './routes'
 import Pokedex from './Pages/Pokedex'
-// import Index from './Components/Index'
+import DefaultLayout from './Components/DefaultLayout'
 
 function App() {
 
   return (
     <Routes>
-      <Route path={routes.home} element={<Home/>}/>
-      <Route path={routes.pokedex} element={<Pokedex/>}/>
-      <Route path={routes.shop} element={<Shop/>}/>
-      <Route path={routes.login} element={<Login/>}/>
-      <Route path='*' element={<NotFound/>}/>
+      <Route path={routes.home} element={<DefaultLayout><Home /></DefaultLayout>} />
+      <Route path={routes.pokedex} element={<DefaultLayout><Pokedex /></DefaultLayout>} />
+      <Route path={routes.shop} element={<DefaultLayout><Shop /></DefaultLayout>} />
+      <Route path={routes.login} element={<DefaultLayout><Login /></DefaultLayout>} />
+      <Route path="*" element={<DefaultLayout><NotFound /></DefaultLayout>} />
     </Routes>
-
-    // <Routes>
-    // <Route path={routes.home} element={<Home/>}>
-    //   {/* <Route path={routes.index} element={<Index/>}/> */}
-    //   <Route path={routes.pokedex} element={<Pokedex/>}/>
-    //   <Route path={routes.shop} element={<Shop/>}/>
-    //   <Route path={routes.login} element={<Login/>}/>
-    // </Route>
-    // <Route path='*' element={<NotFound/>}/>
-    // </Routes>
-
   )
 }
 

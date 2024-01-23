@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/Login.module.css'
+import Menu from '../Components/Menu';
+import DefaultLayout from '../Components/DefaultLayout';
 
 const Login = () => {
     
@@ -48,7 +50,7 @@ const Login = () => {
     <>
         <div className={styles.loginForm}>
             {isLoggedIn ? (
-                <>
+                <>  
                     <h2>Welcome {userName} !</h2>
                     <button onClick={onLogOut}>Log out</button>
                 </>
